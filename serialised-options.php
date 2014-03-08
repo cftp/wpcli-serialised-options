@@ -43,7 +43,7 @@ if ( defined( 'WP_CLI' ) && WP_CLI ) {
 			if ( $updated ) {
 				//
 			} else {
-				WP_CLI::error( 'Option update failed' );
+				WP_CLI::error( 'Option "'.$option.'" update failed' );
 			}
 		}
 
