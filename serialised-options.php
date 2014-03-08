@@ -39,8 +39,6 @@ if ( defined( 'WP_CLI' ) && WP_CLI ) {
 
 			$data = unserialize( trim( base64_decode( $value ) ) );
 
-			update_option( $option, $data );
-
 			$updated = update_option( $option, $data );
 			if ( $updated ) {
 				WP_CLI::success( 'Option updated' );
