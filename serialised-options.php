@@ -41,7 +41,7 @@ if ( defined( 'WP_CLI' ) && WP_CLI ) {
 
 			$updated = update_option( $option, $data );
 			if ( $updated ) {
-				WP_CLI::success( 'Option updated' );
+				//
 			} else {
 				WP_CLI::error( 'Option update failed' );
 			}
